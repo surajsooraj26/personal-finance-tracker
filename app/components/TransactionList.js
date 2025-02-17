@@ -1,6 +1,5 @@
 "use client";
 import { Button } from "./ui/button";
-import axios from "axios";
 
 export default function TransactionList({ transactions, onDelete }) {
   return (

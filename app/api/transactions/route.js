@@ -15,7 +15,7 @@ export async function POST(req) {
   }
 }
 
-export async function GET(req) {
+export async function GET() {
   try {
     await connectToDatabase();
     const transactions = await Transaction.find().sort({ date: -1 });
